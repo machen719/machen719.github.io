@@ -593,7 +593,7 @@ Authors' Addresses<br />
     它还描述了使用OpenID Connect时关于安全和隐私的注意事项。
 
 </p>
-<p>
+<p style="display:none">
 	As background,
 	the <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749]
 	and <a class='info' href='#RFC6750'>OAuth 2.0 Bearer Token Usage<span> (</span><span class='info'>Jones, M. and D. Hardt, &ldquo;The OAuth 2.0 Authorization Framework: Bearer Token Usage,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6750]
@@ -607,6 +607,15 @@ Authors' Addresses<br />
       
 </p>
 <p>
+    作为背景,
+    <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749]
+    和 <a class='info' href='#RFC6750'>OAuth 2.0 Bearer Token Usage<span> (</span><span class='info'>Jones, M. and D. Hardt, &ldquo;The OAuth 2.0 Authorization Framework: Bearer Token Usage,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6750]
+    规范提供了一个为第三方应用程序获取并访问受限的HTTP资源通用框架。 它们定义了获取和使用Access Token访问资源的机制但没有定义提供身份信息的标准方法。
+    值得注意的是, 如果没有OAuth 2.0, 它就无法实现提供关于终端用户的认证信息。
+    读者应该熟悉这些规范。
+
+</p>
+<p style="display:none">
 	OpenID Connect implements authentication as an extension to the
 	OAuth 2.0 authorization process.
 	Use of this extension is requested by Clients by including
@@ -620,6 +629,14 @@ Authors' Addresses<br />
 	OAuth 2.0 Clients using OpenID Connect
 	are also referred to as Relying Parties (RPs).
       
+</p>
+<p>
+    OpenID Connect实现了认证作为OAuth 2.0 授权过程的扩展.
+    使用这个扩展是要求客户端在认证请求时包含<tt>openid</tt> 这个scope 值。
+    执行身份认证返回的信息在一个<a class='info' href='#JWT'>JSON Web Token (JWT)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWT]
+    格式信息中叫做 ID Token (见 <a class='info' href='#IDToken'>Section&nbsp;2<span> (</span><span class='info'>ID Token</span><span>)</span></a>)。
+    实现了 OpenID Connect 的OAuth 2.0认证服务器也被称为 OpenID 提供者 (OPs)。使用OpenID Connect的OAuth 2.0客户端也被称为依赖方(RPs)。
+
 </p>
 <p>
 	This specification assumes that the Relying Party has already obtained
