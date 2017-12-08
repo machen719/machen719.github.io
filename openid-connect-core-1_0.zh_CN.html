@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en"><head><title>Final: OpenID Connect Core 1.0 incorporating errata set 1</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="description" content="OpenID Connect Core 1.0 incorporating errata set 1">
@@ -565,7 +565,7 @@ Authors' Addresses<br />
 介绍</h3>
 
 <p>
-    <span title="OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0">OpenID Connect 1.0是在OAuth 2.0之上的一个简单的认证层。</span>
+    <span title="OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0">OpenID Connect 1.0是在OAuth 2.0之上的一个简单的身份层。</span>
     <a class='info' href='#RFC6749'>
         [RFC6749]
         <span> (</span>
@@ -576,16 +576,17 @@ Authors' Addresses<br />
     on the authentication performed by an Authorization Server, as well as to
     obtain basic profile information about the End-User in an interoperable and
     REST-like manner.">
-        协议，它让客户端验能够验证来自于授权服务器的认证信息，以及用类似于REST的交互方式来获取终端用户的基本信息。
+        协议，其允许客户端通过授权服务器验证终端用户身份，通过互操作性和REST-like性获取终端客户的基本概要信息。
     </span>
 </p>
-<p>
-	The OpenID Connect Core 1.0 specification defines
+<p title="The OpenID Connect Core 1.0 specification defines
 	the core OpenID Connect functionality:
 	authentication built on top of OAuth 2.0 and
 	the use of Claims to communicate information about the End-User.
-	It also describes the security and privacy considerations for using OpenID Connect.
-      
+	It also describes the security and privacy considerations for using OpenID Connect.">
+    OpenID Connect Core 1.0 规范定义了核心OpenID Connect功能：
+    基于OAuth 2.0构建的身份验证以及使用Claims来传递有关终端用户的信息。
+    它还描述了使用OpenID Connect的安全和隐私考虑事项。
 </p>
 <p>
 	As background,
@@ -598,7 +599,6 @@ Authors' Addresses<br />
 	Notably, without profiling OAuth 2.0, it is incapable of
 	providing information about the authentication of an End-User.
 	Readers are expected to be familiar with these specifications.
-      
 </p>
 <p>
 	OpenID Connect implements authentication as an extension to the
