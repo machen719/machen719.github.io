@@ -610,7 +610,7 @@ Authors' Addresses<br />
     作为背景,
     <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749]
     和 <a class='info' href='#RFC6750'>OAuth 2.0 Bearer Token Usage<span> (</span><span class='info'>Jones, M. and D. Hardt, &ldquo;The OAuth 2.0 Authorization Framework: Bearer Token Usage,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6750]
-    规范提供了一个为第三方应用程序获取并访问受限的HTTP资源通用框架。 它们定义了获取和使用Access Token访问资源的机制但没有定义提供身份信息的标准方法。
+    规范提供了一个为第三方应用程序获取并访问受限的HTTP资源的通用框架。 它们定义了获取和使用Access Token访问资源的机制，但没有定义提供身份信息的标准方法。
     值得注意的是, 如果没有OAuth 2.0, 它就无法实现提供关于终端用户的认证信息。
     读者应该熟悉这些规范。
 
@@ -631,14 +631,14 @@ Authors' Addresses<br />
       
 </p>
 <p>
-    OpenID Connect实现了认证作为OAuth 2.0 授权过程的扩展.
+    OpenID Connect 作为OAuth 2.0 授权过程的扩展实现了认证。
     使用这个扩展是要求客户端在认证请求时包含<tt>openid</tt> 这个scope 值。
     执行身份认证返回的信息在一个<a class='info' href='#JWT'>JSON Web Token (JWT)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWT]
     格式信息中叫做 ID Token (见 <a class='info' href='#IDToken'>Section&nbsp;2<span> (</span><span class='info'>ID Token</span><span>)</span></a>)。
-    实现了 OpenID Connect 的OAuth 2.0认证服务器也被称为 OpenID 提供者 (OPs)。使用OpenID Connect的OAuth 2.0客户端也被称为依赖方(RPs)。
+    实现了 OpenID Connect 的OAuth 2.0认证服务器也被称为 OpenID Providers (OPs)。使用OpenID Connect的OAuth 2.0客户端也被称为Relying Parties (RPs)。
 
 </p>
-<p>
+<p style="display:none">
 	This specification assumes that the Relying Party has already obtained
 	configuration information about the OpenID Provider, including its
 	Authorization Endpoint and Token Endpoint locations.
@@ -648,6 +648,13 @@ Authors' Addresses<br />
       
 </p>
 <p>
+    这个规范假设Relying Party已经获取了关于OpenID Provider的配置信息，
+    包括它的Authorization Endpoint和Token Endpoint的位置，
+    这些信息通常是通过发现获得的，如在<a class='info' href='#OpenID.Discovery'>OpenID Connect Discovery 1.0<span> (</span><span class='info'>Sakimura, N., Bradley, J., Jones, M., and E. Jay, &ldquo;OpenID Connect Discovery 1.0,&rdquo; November&nbsp;2014.</span><span>)</span></a> [OpenID.Discovery]中描述的那样，
+    或者可能通过其它的获取机制。
+
+</p>
+<p style="display:none">
 	Likewise, this specification assumes that the Relying Party has already obtained
 	sufficient credentials and provided information needed to use the OpenID Provider.
 	This is normally done via Dynamic Registration,
@@ -655,6 +662,13 @@ Authors' Addresses<br />
 	<a class='info' href='#OpenID.Registration'>OpenID Connect Dynamic Client Registration 1.0<span> (</span><span class='info'>Sakimura, N., Bradley, J., and M. Jones, &ldquo;OpenID Connect Dynamic Client Registration 1.0,&rdquo; November&nbsp;2014.</span><span>)</span></a> [OpenID.Registration],
 	or may be obtained via other mechanisms.
       
+</p>
+<p>
+    同样的，这个规范假设Relying Party已经获得了足够的资质并且已经提供给OpenID Provider所需的信息。
+    这通常是通过动态注册完成的，如在
+    <a class='info' href='#OpenID.Registration'>OpenID Connect Dynamic Client Registration 1.0<span> (</span><span class='info'>Sakimura, N., Bradley, J., and M. Jones, &ldquo;OpenID Connect Dynamic Client Registration 1.0,&rdquo; November&nbsp;2014.</span><span>)</span></a> [OpenID.Registration]中描述的那样，
+    或者可能通过其它的获取机制。
+
 </p>
 <a name="rnc"></a><br /><hr />
 <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
