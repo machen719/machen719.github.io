@@ -742,14 +742,19 @@ Terminology</h3>
 <p>本规范还定义了以下术语：</p>
 <blockquote class="text"><dl>
 <dt>Authentication</dt>
-<dd>
+<dd style="display:none">
 	      
 	      Process used to achieve sufficient confidence in the binding
 	      between the Entity and the presented Identity.
 	    
 </dd>
-<dt>Authentication Request</dt>
 <dd>
+
+    用于在绑定的实体和呈现的身份之间实现足够的信任的过程。
+
+</dd>
+<dt>Authentication Request</dt>
+<dd style="display:none">
 	      
 	      OAuth 2.0 Authorization Request using extension parameters and scopes
 	      defined by OpenID Connect to request that the End-User be authenticated
@@ -757,16 +762,33 @@ Terminology</h3>
 	      to the Client, which is an OpenID Connect Relying Party.
 	    
 </dd>
-<dt>Authentication Context</dt>
 <dd>
-	      
-              Information that the Relying Party can require before it makes an 
-              entitlement decision with respect to an authentication response. 
-              Such context can include, but is not limited to, the actual 
-              authentication method used or level of assurance such as 
-              <a class='info' href='#ISO29115'>ISO/IEC 29115<span> (</span><span class='info'>International Organization for Standardization, &ldquo;ISO/IEC 29115:2013 -- 	  Information technology - Security techniques - Entity authentication 	  assurance framework,&rdquo; March&nbsp;2013.</span><span>)</span></a> [ISO29115] 
-              entity authentication assurance level.
-            
+
+    OAuth 2.0 Authorization Request 使用定义在OpenID Connect中扩展的 parameters 和 scopes
+    来要求 End-User 被 Authorization Server 认证， Authorization Server 是一个 OpenID Connect Provider，
+    对于 Client， 它是一个 OpenID Connect Relying Party。
+
+</dd>
+<dt>Authentication Context</dt>
+<dd style="display:none">
+
+    Information that the Relying Party can require before it makes an
+    entitlement decision with respect to an authentication response.
+    Such context can include, but is not limited to, the actual
+    authentication method used or level of assurance such as
+    <a class='info' href='#ISO29115'>ISO/IEC 29115<span> (</span><span class='info'>International Organization for Standardization, &ldquo;ISO/IEC 29115:2013 -- 	  Information technology - Security techniques - Entity authentication 	  assurance framework,&rdquo; March&nbsp;2013.</span><span>)</span></a> [ISO29115]
+    entity authentication assurance level.
+
+</dd>
+<dd>
+    Relying Party 可以要求在他
+    Information that the Relying Party can require before it makes an
+    entitlement decision with respect to an authentication response.
+    Such context can include, but is not limited to, the actual
+    authentication method used or level of assurance such as
+    <a class='info' href='#ISO29115'>ISO/IEC 29115<span> (</span><span class='info'>International Organization for Standardization, &ldquo;ISO/IEC 29115:2013 -- 	  Information technology - Security techniques - Entity authentication 	  assurance framework,&rdquo; March&nbsp;2013.</span><span>)</span></a> [ISO29115]
+    entity authentication assurance level.
+
 </dd>
 <dt>Authentication Context Class</dt>
 <dd>
