@@ -11,7 +11,6 @@
         background-color: #FFF;
         margin: 2em;
     }
-    en { display: none; }
         h1, h2, h3, h4, h5, h6 {
                 font-family: helvetica, monaco, "MS Sans Serif", arial, sans-serif;
                 font-weight: bold; font-style: normal;
@@ -161,44 +160,30 @@
 <h1><br />OpenID Connect Core 1.0 incorporating errata set 1</h1>
 
 <h3>摘要</h3>
-<en>
-    OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0
-    protocol. It enables Clients to verify the identity of the End-User based
-    on the authentication performed by an Authorization Server, as well as to
-    obtain basic profile information about the End-User in an interoperable and 
-    REST-like manner.
-</en>
-<p>
-    OpenID Connect 1.0 是在OAuth 2.0之上的一个轻量级身份层协议.
+
+<p title="OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0
+protocol. It enables Clients to verify the identity of the End-User based
+on the authentication performed by an Authorization Server, as well as to
+obtain basic profile information about the End-User in an interoperable and 
+REST-like manner.">
+    OpenID Connect 1.0 是在OAuth 2.0之上的一个简单的身份层协议.
     它使客户端能够基于授权服务器执行的认证来验证最终用户的身份，
     以及以互操作和REST-like的方式获得关于终端用户的基本信息。
 </p>
-<<<<<<< HEAD
-<p style="display:none">
-	This specification defines
+
+	<!--This specification defines
 	the core OpenID Connect functionality:
 	authentication built on top of OAuth 2.0 and
 	the use of Claims to communicate information about the End-User.
-	It also describes the security and privacy considerations for using OpenID Connect.
+	It also describes the security and privacy considerations for using OpenID Connect.-->
       
-</p>
+
 <p title="This specification defines
 the core OpenID Connect functionality:
 authentication built on top of OAuth 2.0 and
 the use of Claims to communicate information about the End-User.
 It also describes the security and privacy considerations for using OpenID Connect.">
     本规范定义了OpenID Connect核心功能：基于OAuth 2.0构建的身份验证以及使用Claims来传递有关终端用户的信息。它还描述了使用OpenID Connect时关于安全和隐私的注意事项。
-=======
-    <en>
-        This specification defines
-        the core OpenID Connect functionality:
-        authentication built on top of OAuth 2.0 and
-        the use of Claims to communicate information about the End-User.
-        It also describes the security and privacy considerations for using OpenID Connect.
-    </en>
-<p>
-    本规范定义了core OpenID Connect功能：基于OAuth 2.0构建的身份验证以及使用Claims来传递有关终端用户的信息。它还描述了使用OpenID Connect的安全和隐私考虑事项。
->>>>>>> refs/remotes/origin/IntroductionToClaims
 </p>
     <a name="toc"></a><br /><hr />
 <h3>Table of Contents</h3>
@@ -580,40 +565,36 @@ Authors' Addresses<br />
 介绍</h3>
 
 <p>
-    <en>
-        OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol. It enables Clients to verify the identity of the End-User based
-        on the authentication performed by an Authorization Server, as well as to
-        obtain basic profile information about the End-User in an interoperable and
-        REST-like manner.
-    </en>
-    <span>OpenID Connect 1.0是在OAuth 2.0之上的一个简单的身份层。</span>
+    <span title="OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0">OpenID Connect 1.0是在OAuth 2.0之上的一个简单的认证层。</span>
     <a class='info' href='#RFC6749'>
         [RFC6749]
         <span> (</span>
         <span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span>
         <span>)</span>
     </a>
-    <span>
-        协议，其允许客户端通过授权服务器验证终端用户身份，通过互操作性和REST-like性获取终端客户的基本概要信息。
+    <span title="protocol. It enables Clients to verify the identity of the End-User based
+    on the authentication performed by an Authorization Server, as well as to
+    obtain basic profile information about the End-User in an interoperable and
+    REST-like manner.">
+        协议，它让客户端验能够验证来自于授权服务器的认证信息，以及用类似于REST的交互方式来获取终端用户的基本信息。
     </span>
 </p>
-<<<<<<< HEAD
-<p style="display:none">
-	The OpenID Connect Core 1.0 specification defines
+
+	<!--The OpenID Connect Core 1.0 specification defines
 	the core OpenID Connect functionality:
 	authentication built on top of OAuth 2.0 and
 	the use of Claims to communicate information about the End-User.
-	It also describes the security and privacy considerations for using OpenID Connect.
+	It also describes the security and privacy considerations for using OpenID Connect.-->
       
-</p>
+
 <p>
     OpenID Connect Core 1.0 规范定义了OpenID Connect的核心功能:
     构建于OAuth2.0之上的认证和使用Claims来传递关于终端用户的信息。
     它还描述了使用OpenID Connect时关于安全和隐私的注意事项。
 
 </p>
-<p style="display:none">
-	As background,
+
+	<!--As background,
 	the <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749]
 	and <a class='info' href='#RFC6750'>OAuth 2.0 Bearer Token Usage<span> (</span><span class='info'>Jones, M. and D. Hardt, &ldquo;The OAuth 2.0 Authorization Framework: Bearer Token Usage,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6750]
 	specifications provide a general framework for third-party applications
@@ -622,9 +603,9 @@ Authors' Addresses<br />
 	do not define standard methods to provide identity information.
 	Notably, without profiling OAuth 2.0, it is incapable of
 	providing information about the authentication of an End-User.
-	Readers are expected to be familiar with these specifications.
+	Readers are expected to be familiar with these specifications.-->
       
-</p>
+
 <p>
     作为背景,
     <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749]
@@ -634,8 +615,9 @@ Authors' Addresses<br />
     读者应该熟悉这些规范。
 
 </p>
-<p style="display:none">
-	OpenID Connect implements authentication as an extension to the
+
+
+	<!--OpenID Connect implements authentication as an extension to the
 	OAuth 2.0 authorization process.
 	Use of this extension is requested by Clients by including
 	the <tt>openid</tt> scope value
@@ -646,9 +628,9 @@ Authors' Addresses<br />
 	OAuth 2.0 Authentication Servers implementing OpenID Connect
 	are also referred to as OpenID Providers (OPs).
 	OAuth 2.0 Clients using OpenID Connect
-	are also referred to as Relying Parties (RPs).
+	are also referred to as Relying Parties (RPs).-->
       
-</p>
+
 <p>
     OpenID Connect 作为OAuth 2.0 授权过程的扩展实现了认证。
     使用这个扩展是要求客户端在认证请求时包含<tt>openid</tt> 这个scope 值。
@@ -657,15 +639,15 @@ Authors' Addresses<br />
     实现了 OpenID Connect 的OAuth 2.0认证服务器也被称为 OpenID Providers (OPs)。使用OpenID Connect的OAuth 2.0客户端也被称为Relying Parties (RPs)。
 
 </p>
-<p style="display:none">
-	This specification assumes that the Relying Party has already obtained
+
+	<!--This specification assumes that the Relying Party has already obtained
 	configuration information about the OpenID Provider, including its
 	Authorization Endpoint and Token Endpoint locations.
 	This information is normally obtained via Discovery,
 	as described in <a class='info' href='#OpenID.Discovery'>OpenID Connect Discovery 1.0<span> (</span><span class='info'>Sakimura, N., Bradley, J., Jones, M., and E. Jay, &ldquo;OpenID Connect Discovery 1.0,&rdquo; November&nbsp;2014.</span><span>)</span></a> [OpenID.Discovery],
-	or may be obtained via other mechanisms.
+	or may be obtained via other mechanisms.-->
       
-</p>
+
 <p>
     这个规范假设Relying Party已经获取了关于OpenID Provider的配置信息，
     包括它的Authorization Endpoint和Token Endpoint的位置，
@@ -673,15 +655,14 @@ Authors' Addresses<br />
     或者可能通过其它的获取机制。
 
 </p>
-<p style="display:none">
-	Likewise, this specification assumes that the Relying Party has already obtained
+
+	<!--Likewise, this specification assumes that the Relying Party has already obtained
 	sufficient credentials and provided information needed to use the OpenID Provider.
 	This is normally done via Dynamic Registration,
 	as described in
 	<a class='info' href='#OpenID.Registration'>OpenID Connect Dynamic Client Registration 1.0<span> (</span><span class='info'>Sakimura, N., Bradley, J., and M. Jones, &ldquo;OpenID Connect Dynamic Client Registration 1.0,&rdquo; November&nbsp;2014.</span><span>)</span></a> [OpenID.Registration],
-	or may be obtained via other mechanisms.
-      
-</p>
+	or may be obtained via other mechanisms.-->
+
 <p>
     同样的，这个规范假设Relying Party已经获得了足够的资质并且已经提供给OpenID Provider所需的信息。
     这通常是通过动态注册完成的，如在
@@ -689,633 +670,182 @@ Authors' Addresses<br />
     或者可能通过其它的获取机制。
 
 </p>
-<a name="rnc"></a><br /><hr />
-<table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
-<a name="rfc.section.1.1"></a><h3>1.1.&nbsp;
-Requirements Notation and Conventions</h3>
+    <a name="rnc"></a><br /><hr />
+    <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
+        <!--1.1.&nbsp;
+        Requirements Notation and Conventions-->
+    <a name="rfc.section.1.1"></a><h3>
+        1.1.&nbsp;
+        要求符号和约定
+    </h3>
+    
+        <!--The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+        "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this
+        document are to be interpreted as described in RFC 2119 (Bradner, S., &ldquo;Key words for use in RFCs to Indicate Requirement Levels,&rdquo; March&nbsp;1997.)
+        [RFC2119].-->
+    <p>
+        关键词“必须”，“不得”，“要求”，“应该”，“不应该”，“应该”，“不应该”，“推荐”，“不推荐”，“可能”和“可选” “在本文档中的解释如
+        <a class="info" href="#RFC2119">
+            RFC 2119
+            <span>(</span>
+            <span class="info">Bradner, S., &ldquo;Key words for use in RFCs to Indicate Requirement Levels,&rdquo; March&nbsp;1997.</span>
+            <span>)</span>
+        </a>[RFC2119] 中所述。
+    </p>
+        <!--In the .txt version of this document,
+        values are quoted to indicate that they are to be taken literally.
+        When using these values in protocol messages,
+        the quotes MUST NOT be used as part of the value.
+        In the HTML version of this document,
+        values to be taken literally are indicated by
+        the use of <tt>this fixed-width font</tt>.-->
+    <p>
+        在本文档的.txt版本中，引用值表明它们是字面上的意思。在协议消息中使用这些值时，不得将引号用作值的一部分。在这个文档的HTML版本中，字面值应该用这个<tt>固定宽度的字体</tt>表示。
+    </p>
 
-<p>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-	"SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this
-	document are to be interpreted as described in <a class='info' href='#RFC2119'>RFC 2119<span> (</span><span class='info'>Bradner, S., &ldquo;Key words for use in RFCs to Indicate Requirement Levels,&rdquo; March&nbsp;1997.</span><span>)</span></a> [RFC2119].
-=======
-<en>
-    The OpenID Connect Core 1.0 specification defines
-    the core OpenID Connect functionality:
-    authentication built on top of OAuth 2.0 and
-    the use of Claims to communicate information about the End-User.
-    It also describes the security and privacy considerations for using OpenID Connect.
-</en>
-<p>
-    OpenID Connect Core 1.0 规范定义了核心OpenID Connect功能：
-    基于OAuth 2.0构建的身份验证以及使用Claims来传递有关终端用户的信息。
-    它还描述了使用OpenID Connect的安全和隐私考虑事项。
-</p>
-<p>
-    <en>
-        As background, the OAuth 2.0 Authorization Framework (Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.)[RFC6749] and OAuth 2.0 Bearer Token Usage [RFC6750]
-    </en>
-    <span>
-        作为背景，
-    </span>
-    <span>
-        <a class='info' href='#RFC6749'>OAuth 2.0 Authorization Framework
-            <span> (</span>
-            <span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span>
+        <!--All uses of <a class='info' href='#JWS'>
+            JSON Web Signature (JWS)<span> (</span>
+            <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span>
+        </a> [JWS]
+        and <a class='info' href='#JWE'>
+            JSON Web Encryption (JWE)<span> (</span>
+            <span class='info'>Jones, M., Rescorla, E., and J. Hildebrand, &ldquo;JSON Web Encryption (JWE),&rdquo; July&nbsp;2014.</span><span>)</span>
+        </a> [JWE]
+        data structures in this specification utilize
+        the JWS Compact Serialization or the JWE Compact Serialization;
+        the JWS JSON Serialization and the JWE JSON Serialization are not used.-->
+    <p>
+        本规范中 的 <a class="info" href="#JWS">
+            JSON Web Signature（JWS）
+            <span>(</span>
+            <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span>
             <span>)</span>
-        </a> [RFC6749]
-        和 <a class='info' href='#RFC6750'>OAuth 2.0 Bearer Token Usage
-            <span> (</span>
-            <span class='info'>Jones, M. and D. Hardt, &ldquo;The OAuth 2.0 Authorization Framework: Bearer Token Usage,&rdquo; October&nbsp;2012.</span>
+        </a> [JWS]和
+        <a class="info" href="#JWE">
+            JSON Web Encryption（JWE）
+            <span>(</span>
+            <span class="info">Jones, M., Rescorla, E., and J. Hildebrand, &ldquo;JSON Web Encryption (JWE),&rdquo; July&nbsp;2014.</span>
             <span>)</span>
-        </a> [RFC6750]
-    </span>
-    <en>
-        specifications provide a general framework for third-party applications
-        to obtain and use limited access to HTTP resources. They define
-        mechanisms to obtain and use Access Tokens to access resources but
-        do not define standard methods to provide identity information.
-        Notably, without profiling OAuth 2.0, it is incapable of
-        providing information about the authentication of an End-User.
-        Readers are expected to be familiar with these specifications.
-    </en>
-    <span>
-        规范为第三方应用程序提供了一个获取和使用有限的HTTP资源的通用框架。
-        他们定义了获取和使用Access Token访问资源的机制，但没有定义标准的方法来提供身份信息。
-        值得注意的是，如果不分析OAuth 2.0，则无法提供有关终端用户身份验证的信息。读者应熟悉这些规范。
-    </span>
-</p>
-<p>
-    <en>
-        OpenID Connect implements authentication as an extension to the
-        OAuth 2.0 authorization process.
-    </en>
-    <span>
-        OpenID Connect将认证作为OAuth 2.0授权过程的扩展来实现。
-    </span>
-    <en>
-        Use of this extension is requested by Clients by including
-        the openid scope value in the Authorization Request.
-    </en>
-    <span>
-        客户通过在授权请求中包含<tt>openid</tt>的scope值来请求使用此扩展。
-    </span>
-    <en>
-        Information about the authentication performed is returned in a JSON Web Token (JWT) (Jones, M., Bradley, J., and N. Sakimura,  JSON Web Token (JWT); July 2014.)
-        [JWT]  called an ID Token (see Section 2 (ID Token)).
-    </en>
-    <span>
-        有关所执行身份验证的信息将在称为ID Token的
-        <a class="info" href="#JWT">
-            JSON Web Token（JWT）
+        </a> [JWE]数据结构的所有用途均使用JWS序列化(JWS Compact Serialization)或JWE序列化(JWE Compact Serialization); 不使用JWS JSON序列化和JWE JSON序列化。
+    </p>
+    <a name="Terminology"></a><br /><hr />
+    <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
+    <!--
+        1.2.&nbsp;
+        Terminology
+    -->
+    <a name="rfc.section.1.2"></a><h3>
+        1.2.&nbsp;
+        术语
+    </h3>
+    <!--
+        This specification uses the terms "Access Token", "Authorization Code",
+        "Authorization Endpoint", "Authorization Grant", "Authorization Server",
+        "Client", "Client Authentication", "Client Identifier", "Client Secret",
+        "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
+        "Resource Owner", "Resource Server", "Response Type", and "Token Endpoint"
+        defined by <a class='info' href='#RFC6749'>
+            OAuth 2.0<span> (</span>
+            <span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span>
+        </a> [RFC6749],
+        the terms "Claim Name", "Claim Value", "JSON Web Token (JWT)",
+        "JWT Claims Set", and "Nested JWT"
+        defined by <a class='info' href='#JWT'>
+            JSON Web Token (JWT)<span> (</span>
+            <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span>
+        </a> [JWT],
+        the terms "Header Parameter" and "JOSE Header"
+        defined by <a class='info' href='#JWS'>
+            JSON Web Signature (JWS)<span> (</span>
+            <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span>
+        </a> [JWS],
+        the term "User Agent" defined by <a class='info' href='#RFC2616'>
+            RFC 2616<span> (</span>
+            <span class='info'>Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span>
+            <span>)</span>
+        </a> [RFC2616],
+        and the term "Response Mode" defined by
+        <a class='info' href='#OAuth.Responses'>
+            OAuth 2.0 Multiple Response Type Encoding Practices
+            <span> (</span>
+            <span class='info'>de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span>
+            <span>)</span>
+        </a> [OAuth.Responses].
+    -->
+    <p>
+        本规范使用术语“访问令牌(Access Token)”，“授权码(Authorization Code)”，“授权终端(Authorization Endpoint)”，“授权批准（Authorization Grant）”，
+        “授权服务器（Authorization Server）”，“客户端（Client）”，“客户端认证（Client Authentication）”，
+        “客户端标识”（Client Identifier），“客户端密钥（Client Secret）”，“授权类型（Grant Type）“，”受保护的资源（Protected Resource）“，”重定向URI（Redirection URI）“，
+        ”刷新令牌（Refresh Token）“，”资源所有者（Resource Owner）“，”资源服务器（Resource Server）“，
+        ”响应类型（Response Type）“，以及由
+        <a class="info" href="#RFC6749">
+            OAuth 2.0
+            <span>(</span>
+            <span>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span>
+            <span>)</span>
+        </a>[RFC6749]，
+        定义的”Token Endpoint“ ,
+        由<a class="info" href="#JWT">
+            JSON Web Token (JWT)
             <span>(</span>
             <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span>
             <span>)</span>
-        </a>
-        [JWT]（请参阅
-        <a class="info" href="#IDToken">
-            第2章
+        </a>[JWT], 定义的 "Claim Name"，"Claim Value"，"JSON Web Token (JWT)", “JWT Claims Set”和“Nested JWT ”
+        由<a class="info" href="#JWS">
+            JSON Web Signature（JWS）
             <span>(</span>
-            <span class="info">ID Token</span>
+            <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span>
             <span>)</span>
         </a>
-        ）中返回。
-    </span>
-    <en>
-        OAuth 2.0 Authentication Servers implementing OpenID Connect
-        are also referred to as OpenID Providers (OPs).
-        OAuth 2.0 Clients using OpenID Connect
-        are also referred to as Relying Parties (RPs).
-    </en>
-    <span>
-        实现OpenID Connect的OAuth 2.0认证服务器也被称为OpenID提供者（OpenID Providers -- OPs）。使用OpenID Connect的OAuth 2.0客户端也被称为依赖方（Relying Parties -- RPs）。
-    </span>
->>>>>>> refs/remotes/origin/IntroductionToClaims
-</p>
-<p>
-    <en>
-        This specification assumes that the Relying Party has already obtained
-        configuration information about the OpenID Provider, including its
-        Authorization Endpoint and Token Endpoint locations.
-    </en>
-    <span>
-        本规范假定，依赖方（RPs）已经获得了有关OpenID提供者 （OPs）的配置信息，包括Authorization Endpoint和Token Endpoint的位置。
-    </span>
-    <en>
-        This information is normally obtained via Discovery,
-        as described in OpenID Connect Discovery 1.0
-        (Sakimura, N., Bradley, J., Jones, M., and E. Jay, &ldquo;OpenID Connect Discovery 1.0,&rdquo; November&nbsp;2014.)
-        or may be obtained via other mechanisms.
-    </en>
-    <span>
-        这些信息通常通过Discovery获得，如
-        <a class="info" href="#OpenID.Discovery">
-            OpenID Connect Discovery 1.0
+        [JWS]定义的“Header Parameter”和“JOSE Header” ，
+        由<a class="info" href="#RFC2616">
+            RFC 2616
             <span>(</span>
-            <span class="info">Sakimura, N., Bradley, J., Jones, M., and E. Jay, &ldquo;OpenID Connect Discovery 1.0,&rdquo; November&nbsp;2014.</span>
+            <span class="info">Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span>
             <span>)</span>
-        </a> [OpenID.Discovery]中所述，或者可以通过其他机制获得。
-    </span>
-</p>
-<p>
-    <en>
-        Likewise, this specification assumes that the Relying Party has already obtained
-        sufficient credentials and provided information needed to use the OpenID Provider.
-        This is normally done via Dynamic Registration,
-        as described in OpenID Connect Dynamic Client Registration 1.0
-        (Sakimura, N., Bradley, J., and M. Jones, &ldquo;OpenID Connect Dynamic Client Registration 1.0,&rdquo; November&nbsp;2014.)
-        [OpenID.Registration], or may be obtained via other mechanisms.
-    </en>
-    <span>
-        同样，本规范假定依赖方(RPs)已经获得足够的证书并提供了使用OpenID提供程序所需的信息。
-        这通常通过动态注册完成，如 <a class="info" href="#OpenID.Registration">
-            OpenID Connect动态客户端注册1.0
+        </a>[RFC2616]定义的“User Agent”，
+        以及由
+        <a class="info" href="#OAuth.Responses">
+            OAuth 2.0 Multiple Response Type Encoding Practices
             <span>(</span>
-            <span class="info">Sakimura, N., Bradley, J., and M. Jones, &ldquo;OpenID Connect Dynamic Client Registration 1.0,&rdquo; November&nbsp;2014.</span>
+            <span class="info">de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span>
             <span>)</span>
-        </a> [OpenID.Registration]中所述，或者可以通过其他机制获得。
-    </span>
-</p>
-
-<<<<<<< HEAD
-<p style="display:none">
-	  This specification uses the terms "Access Token", "Authorization Code",
-	  "Authorization Endpoint", "Authorization Grant", "Authorization Server",
-	  "Client", "Client Authentication", "Client Identifier", "Client Secret",
-	  "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
-	  "Resource Owner", "Resource Server", "Response Type", and "Token Endpoint"
-	  defined by <a class='info' href='#RFC6749'>OAuth 2.0<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749],
-	  the terms "Claim Name", "Claim Value", "JSON Web Token (JWT)",
-	  "JWT Claims Set", and "Nested JWT"
-	  defined by <a class='info' href='#JWT'>JSON Web Token (JWT)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWT],
-	  the terms "Header Parameter" and "JOSE Header"
-	  defined by <a class='info' href='#JWS'>JSON Web Signature (JWS)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWS],
-	  the term "User Agent" defined by <a class='info' href='#RFC2616'>RFC 2616<span> (</span><span class='info'>Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span><span>)</span></a> [RFC2616],
-	  and the term "Response Mode" defined by
-	  <a class='info' href='#OAuth.Responses'>OAuth 2.0 Multiple Response Type Encoding Practices<span> (</span><span class='info'>de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span><span>)</span></a> [OAuth.Responses].
-        
-</p>
-<p>
-    本规范使用术语 "Access Token", "Authorization Code",
-    "Authorization Endpoint", "Authorization Grant", "Authorization Server",
-    "Client", "Client Authentication", "Client Identifier", "Client Secret",
-    "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
-    "Resource Owner", "Resource Server", "Response Type", 和 "Token Endpoint"
-    定义在 <a class='info' href='#RFC6749'>OAuth 2.0<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a> [RFC6749],
-    术语 "Claim Name", "Claim Value", "JSON Web Token (JWT)",
-    "JWT Claims Set", 和 "Nested JWT"
-    定义在 <a class='info' href='#JWT'>JSON Web Token (JWT)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWT],
-    术语 "Header Parameter" and "JOSE Header"
-    定义在 <a class='info' href='#JWS'>JSON Web Signature (JWS)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWS],
-    术语 "User Agent" 定义在 <a class='info' href='#RFC2616'>RFC 2616<span> (</span><span class='info'>Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span><span>)</span></a> [RFC2616],
-    以及术语 "Response Mode" 定义在
-    <a class='info' href='#OAuth.Responses'>OAuth 2.0 Multiple Response Type Encoding Practices<span> (</span><span class='info'>de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span><span>)</span></a> [OAuth.Responses].
-
-</p>
-<p style="display:none">
-          This specification also defines the following terms:
-          </p>
-<p>本规范还定义了以下术语：</p>
-<blockquote class="text"><dl>
-<dt>Authentication</dt>
-<dd style="display:none">
-	      
-	      Process used to achieve sufficient confidence in the binding
-	      between the Entity and the presented Identity.
-	    
-</dd>
-<dd>
-
-    用于在绑定的实体和呈现的身份之间实现足够的信任的过程。
-
-</dd>
-<dt>Authentication Request</dt>
-<dd style="display:none">
-	      
-	      OAuth 2.0 Authorization Request using extension parameters and scopes
-	      defined by OpenID Connect to request that the End-User be authenticated
-	      by the Authorization Server, which is an OpenID Connect Provider,
-	      to the Client, which is an OpenID Connect Relying Party.
-	    
-</dd>
-<dd>
-
-    OAuth 2.0 Authorization Request 使用定义在OpenID Connect中扩展的 parameters 和 scopes
-    来要求 End-User 被 Authorization Server 认证， Authorization Server 是一个 OpenID Connect Provider，
-    对于 Client， 它是一个 OpenID Connect Relying Party。
-
-</dd>
-<dt>Authentication Context</dt>
-<dd style="display:none">
-
-    Information that the Relying Party can require before it makes an
-    entitlement decision with respect to an authentication response.
-    Such context can include, but is not limited to, the actual
-    authentication method used or level of assurance such as
-    <a class='info' href='#ISO29115'>ISO/IEC 29115<span> (</span><span class='info'>International Organization for Standardization, &ldquo;ISO/IEC 29115:2013 -- 	  Information technology - Security techniques - Entity authentication 	  assurance framework,&rdquo; March&nbsp;2013.</span><span>)</span></a> [ISO29115]
-    entity authentication assurance level.
-
-</dd>
-<dd>
-    Relying Party 可以要求在他
-    Information that the Relying Party can require before it makes an
-    entitlement decision with respect to an authentication response.
-    Such context can include, but is not limited to, the actual
-    authentication method used or level of assurance such as
-    <a class='info' href='#ISO29115'>ISO/IEC 29115<span> (</span><span class='info'>International Organization for Standardization, &ldquo;ISO/IEC 29115:2013 -- 	  Information technology - Security techniques - Entity authentication 	  assurance framework,&rdquo; March&nbsp;2013.</span><span>)</span></a> [ISO29115]
-    entity authentication assurance level.
-
-</dd>
-<dt>Authentication Context Class</dt>
-<dd>
-	      
-              Set of authentication methods or procedures that are considered
-	      to be equivalent to each other in a particular context.
-            
-</dd>
-<dt>Authentication Context Class Reference</dt>
-<dd>
-	      
-              Identifier for an Authentication Context Class. 
-            
-</dd>
-<dt>Authorization Code Flow</dt>
-<dd>
-	      
-              OAuth 2.0 flow in which
-	      an Authorization Code is returned from the Authorization Endpoint and
-	      all tokens are returned from the Token Endpoint.
-            
-</dd>
-<dt>Authorization Request</dt>
-<dd>
-	      
-              OAuth 2.0 Authorization Request as defined by <a class='info' href='#RFC6749'>[RFC6749]<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a>.
-            
-</dd>
-<dt>Claim</dt>
-<dd>
-	      
-	      Piece of information asserted about an Entity.
-	    
-</dd>
-<dt>Claim Type</dt>
-<dd>
-	      
-	      Syntax used for representing a Claim Value.
-	      This specification defines Normal, Aggregated, and Distributed Claim Types.
-	    
-</dd>
-<dt>Claims Provider</dt>
-<dd>
-	      
-	      Server that can return Claims about an Entity.
-	    
-</dd>
-<dt>Credential</dt>
-<dd>
-	      
-	      Data presented as evidence of the right to use an identity
-	      or other resources.
-	    
-</dd>
-<dt>End-User</dt>
-<dd>
-	      
-              Human participant.
-            
-</dd>
-<dt>Entity</dt>
-<dd>
-	      
-              Something that has a separate and distinct existence and that can be
-	      identified in a context. An End-User is one example of an Entity.
-            
-</dd>
-<dt>Essential Claim</dt>
-<dd>
-	      
-              Claim specified by the Client as being necessary to ensure a smooth
-	      authorization experience for the specific task requested by the End-User.
-            
-</dd>
-<dt>Hybrid Flow</dt>
-<dd>
-	      
-              OAuth 2.0 flow in which
-	      an Authorization Code is returned from the Authorization Endpoint,
-	      some tokens are returned from the Authorization Endpoint,
-	      and others are returned from the Token Endpoint.
-            
-</dd>
-<dt>ID Token</dt>
-<dd>
-	      
-              <a class='info' href='#JWT'>JSON Web Token (JWT)<span> (</span><span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span></a> [JWT] that contains Claims about the Authentication event.
-	      It MAY contain other Claims.
-            
-</dd>
-<dt>Identifier</dt>
-<dd>
-	      
-	     Value that uniquely characterizes an Entity in a specific context.
-	    
-</dd>
-<dt>Identity</dt>
-<dd>
-	      
-	      Set of attributes related to an Entity.
-	    
-</dd>
-<dt>Implicit Flow</dt>
-<dd>
-	      
-              OAuth 2.0 flow in which all tokens are returned from the Authorization Endpoint
-	      and neither the Token Endpoint nor an Authorization Code are used.
-            
-</dd>
-<dt>Issuer</dt>
-<dd>
-	      
-	      Entity that issues a set of Claims.
-	    
-</dd>
-<dt>Issuer Identifier</dt>
-<dd>
-	      
-	      Verifiable Identifier for an Issuer.
-	      An Issuer Identifier is a case sensitive URL
-	      using the <tt>https</tt> scheme that
-	      contains scheme, host, and optionally, port number and path
-	      components and no query or fragment components.
-	    
-</dd>
-<dt>Message</dt>
-<dd>
-	      
-	      Request or a response between an OpenID 
-	      Relying Party and an OpenID Provider.
-	    
-</dd>
-<dt>OpenID Provider (OP)</dt>
-<dd>
-	      
-              OAuth 2.0 Authorization Server that is capable of
-	      Authenticating the End-User and
-              providing Claims to a Relying Party
-              about the Authentication event and the End-User. 
-            
-</dd>
-<dt>Request Object</dt>
-<dd>
-	      
-	      JWT that contains a set of request parameters as its Claims.
-	    
-</dd>
-<dt>Request URI</dt>
-<dd>
-	      
-	      URL that references a resource containing a Request Object.
-	      The Request URI contents MUST be retrievable by the
-	      Authorization Server.
-	    
-</dd>
-<dt>Pairwise Pseudonymous Identifier (PPID)</dt>
-<dd>
-	      
-	      Identifier that identifies the Entity to a Relying Party that cannot be correlated 
-	      with the Entity's PPID at another Relying Party.
-	    
-</dd>
-<dt>Personally Identifiable Information (PII)</dt>
-<dd>
-	      
-              Information that (a) can be used to identify the natural person
-              to whom such information relates, or
-              (b) is or might be directly or indirectly linked to a
-	      natural person to whom such information relates.
-	    
-</dd>
-<dt>Relying Party (RP)</dt>
-<dd>
-	      
-              OAuth 2.0 Client application requiring End-User Authentication
-	      and Claims from an OpenID Provider.
-            
-</dd>
-<dt>Sector Identifier</dt>
-<dd>
-	      
-	      Host component of a URL used by the Relying Party's organization
-	      that is an input to the computation of pairwise Subject Identifiers
-	      for that Relying Party.
-	    
-</dd>
-<dt>Self-Issued OpenID Provider</dt>
-<dd>
-	      
-	      Personal, self-hosted OpenID Provider that issues self-signed ID Tokens.
-	    
-</dd>
-<dt>Subject Identifier</dt>
-<dd>
-	      
-	      Locally unique and never
-	      reassigned identifier within the Issuer for the End-User, 
-	      which is intended to be consumed by the Client.
-	    
-</dd>
-<dt>UserInfo Endpoint</dt>
-<dd>
-	      
-              Protected Resource that, when presented with an Access Token by the Client,
-	      returns authorized information about the End-User represented by the corresponding 
-              Authorization Grant.
-	      The UserInfo Endpoint
-	      URL MUST use the <tt>https</tt> scheme and MAY contain
-	      port, path, and query parameter components.
-=======
-        <a name="rnc"></a><br /><hr />
-        <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
-        <en>
-            1.1.&nbsp;
-            Requirements Notation and Conventions
-        </en>
-        <a name="rfc.section.1.1"></a><h3>
-            1.1.&nbsp;
-            要求符号和约定
-        </h3>
-        <en>
-            The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-            "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this
-            document are to be interpreted as described in RFC 2119 (Bradner, S., &ldquo;Key words for use in RFCs to Indicate Requirement Levels,&rdquo; March&nbsp;1997.)
-            [RFC2119].
-        </en>
-        <p>
-            关键词“必须”，“不得”，“要求”，“应该”，“不应该”，“应该”，“不应该”，“推荐”，“不推荐”，“可能”和“可选” “在本文档中的解释如
-            <a class="info" href="#RFC2119">
-                RFC 2119
-                <span>(</span>
-                <span class="info">Bradner, S., &ldquo;Key words for use in RFCs to Indicate Requirement Levels,&rdquo; March&nbsp;1997.</span>
-                <span>)</span>
-            </a>[RFC2119] 中所述。
-        </p>
-        <en>
-            In the .txt version of this document,
-            values are quoted to indicate that they are to be taken literally.
-            When using these values in protocol messages,
-            the quotes MUST NOT be used as part of the value.
-            In the HTML version of this document,
-            values to be taken literally are indicated by
-            the use of <tt>this fixed-width font</tt>.
-        </en>
-        <p>
-            在本文档的.txt版本中，引用值表明它们是字面上的意思。在协议消息中使用这些值时，不得将引号用作值的一部分。在这个文档的HTML版本中，字面值应该用这个<tt>固定宽度的字体</tt>表示。
-        </p>
-        <en>
-            All uses of <a class='info' href='#JWS'>
-                JSON Web Signature (JWS)<span> (</span>
-                <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span>
-            </a> [JWS]
-            and <a class='info' href='#JWE'>
-                JSON Web Encryption (JWE)<span> (</span>
-                <span class='info'>Jones, M., Rescorla, E., and J. Hildebrand, &ldquo;JSON Web Encryption (JWE),&rdquo; July&nbsp;2014.</span><span>)</span>
-            </a> [JWE]
-            data structures in this specification utilize
-            the JWS Compact Serialization or the JWE Compact Serialization;
-            the JWS JSON Serialization and the JWE JSON Serialization are not used.
-        </en>
-        <p>
-            本规范中 的 <a class="info" href="#JWS">
-                JSON Web Signature（JWS）
-                <span>(</span>
-                <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span>
-                <span>)</span>
-            </a> [JWS]和
-            <a class="info" href="#JWE">
-                JSON Web Encryption（JWE）
-                <span>(</span>
-                <span class="info">Jones, M., Rescorla, E., and J. Hildebrand, &ldquo;JSON Web Encryption (JWE),&rdquo; July&nbsp;2014.</span>
-                <span>)</span>
-            </a> [JWE]数据结构的所有用途均使用JWS序列化(JWS Compact Serialization)或JWE序列化(JWE Compact Serialization); 不使用JWS JSON序列化和JWE JSON序列化。
-        </p>
-        <a name="Terminology"></a><br /><hr />
-        <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
-        <en>
-            1.2.&nbsp;
-            Terminology
-        </en>
-        <a name="rfc.section.1.2"></a><h3>
-            1.2.&nbsp;
-            术语
-        </h3>
-        <en>
-            This specification uses the terms "Access Token", "Authorization Code",
-            "Authorization Endpoint", "Authorization Grant", "Authorization Server",
-            "Client", "Client Authentication", "Client Identifier", "Client Secret",
-            "Grant Type", "Protected Resource", "Redirection URI", "Refresh Token",
-            "Resource Owner", "Resource Server", "Response Type", and "Token Endpoint"
-            defined by <a class='info' href='#RFC6749'>
-                OAuth 2.0<span> (</span>
-                <span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span>
-            </a> [RFC6749],
-            the terms "Claim Name", "Claim Value", "JSON Web Token (JWT)",
-            "JWT Claims Set", and "Nested JWT"
-            defined by <a class='info' href='#JWT'>
-                JSON Web Token (JWT)<span> (</span>
-                <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span><span>)</span>
-            </a> [JWT],
-            the terms "Header Parameter" and "JOSE Header"
-            defined by <a class='info' href='#JWS'>
-                JSON Web Signature (JWS)<span> (</span>
-                <span class='info'>Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span><span>)</span>
-            </a> [JWS],
-            the term "User Agent" defined by <a class='info' href='#RFC2616'>
-                RFC 2616<span> (</span>
-                <span class='info'>Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span>
-                <span>)</span>
-            </a> [RFC2616],
-            and the term "Response Mode" defined by
-            <a class='info' href='#OAuth.Responses'>
-                OAuth 2.0 Multiple Response Type Encoding Practices
-                <span> (</span>
-                <span class='info'>de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span>
-                <span>)</span>
-            </a> [OAuth.Responses].
-        </en>
-        <p>
-            本规范使用术语“访问令牌(Access Token)”，“授权码(Authorization Code)”，“授权终端(Authorization Endpoint)”，“授权批准（Authorization Grant）”，
-            “授权服务器（Authorization Server）”，“客户端（Client）”，“客户端认证（Client Authentication）”，
-            “客户端标识”（Client Identifier），“客户端密钥（Client Secret）”，“授权类型（Grant Type）“，”受保护的资源（Protected Resource）“，”重定向URI（Redirection URI）“，
-            ”刷新令牌（Refresh Token）“，”资源所有者（Resource Owner）“，”资源服务器（Resource Server）“，
-            ”响应类型（Response Type）“，以及由
-            <a class="info" href="#RFC6749">
-                OAuth 2.0
-                <span>(</span>
-                <span>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span>
-                <span>)</span>
-            </a>[RFC6749]，
-            定义的”Token Endpoint“ ,
-            由<a class="info" href="#JWT">
-                JSON Web Token (JWT)
-                <span>(</span>
-                <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Token (JWT),&rdquo; July&nbsp;2014.</span>
-                <span>)</span>
-            </a>[JWT], 定义的 "Claim Name"，"Claim Value"，"JSON Web Token (JWT)", “JWT Claims Set”和“Nested JWT ”
-            由<a class="info" href="#JWS">
-                JSON Web Signature（JWS）
-                <span>(</span>
-                <span class="info">Jones, M., Bradley, J., and N. Sakimura, &ldquo;JSON Web Signature (JWS),&rdquo; July&nbsp;2014.</span>
-                <span>)</span>
-            </a>
-            [JWS]定义的“Header Parameter”和“JOSE Header” ，
-            由<a class="info" href="#RFC2616">
-                RFC 2616
-                <span>(</span>
-                <span class="info">Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., and T. Berners-Lee, &ldquo;Hypertext Transfer Protocol -- HTTP/1.1,&rdquo; June&nbsp;1999.</span>
-                <span>)</span>
-            </a>[RFC2616]定义的“User Agent”，
-            以及由
-            <a class="info" href="#OAuth.Responses">
-                OAuth 2.0多种响应类型编码实践
-                <span>(</span>
-                <span class="info">de Medeiros, B., Ed., Scurtescu, M., Tarjan, P., and M. Jones, &ldquo;OAuth 2.0 Multiple Response Type Encoding Practices,&rdquo; February&nbsp;2014.</span>
-                <span>)</span>
-            </a> [OAuth.Responses] 定义的“Response Mode” 。
-        </p>
-        <en>
-            This specification also defines the following terms:
-        </en>
-        <p>本规范还定义了以下术语：</p>
+        </a> [OAuth.Responses] 定义的“Response Mode” 。
+    </p>
+    <!--
+        This specification also defines the following terms:
+    -->
+    <p>本规范还定义了以下术语：</p>
     <blockquote class="text">
         <dl>
-            <en>Authentication</en>
-            <dt>认证</dt>
-            <en>
+            <!--Authentication-->
+            <dt>Authentication</dt>
+            <!--
                 Process used to achieve sufficient confidence in the binding
                 between the Entity and the presented Identity.
-            </en>
+            -->
             <dd>
-                用于对实体和所呈现身份之间的充分信任的绑定过程。
+                用于对Entity和所呈现身份之间的充分信任的绑定过程。
             </dd>
-            <en>
+            <!--
                 Authentication Request
-            </en>
-            <dt>认证请求</dt>
-            <en>
+            -->
+            <dt>Authentication Request</dt>
+            <!--
                 OAuth 2.0 Authorization Request using extension parameters and scopes
                 defined by OpenID Connect to request that the End-User be authenticated
                 by the Authorization Server, which is an OpenID Connect Provider,
                 to the Client, which is an OpenID Connect Relying Party.
-            </en>
+            -->
             <dd>
-                OAuth 2.0授权请求使用由OpenID Connect定义的扩展参数和范围来请求
+                OAuth 2.0 Authorization Reques使用由OpenID Connect定义的扩展参数和范围来请求
                 由作为OpenID Connect提供者的授权服务器向作为OpenID Connect依赖方的客户端认证终端用户。
             </dd>
-            <en>
+            <!--
                 Authentication Context
-            </en>
-            <dt>认证上下文</dt>
-            <en>
+            -->
+            <dt>Authentication Context</dt>
+            <!--
                 Information that the Relying Party can require before it makes an
                 entitlement decision with respect to an authentication response.
                 Such context can include, but is not limited to, the actual
@@ -1327,7 +857,7 @@ Requirements Notation and Conventions</h3>
                     </span><span>)</span>
                 </a> [ISO29115]
                 entity authentication assurance level.
-            </en>
+            -->
             <dd>
                 依赖方在对认证响应做出权利决定之前可以要求的信息。
                 这样的上下文可以包括但不限于使用的实际认证方法或诸如
@@ -1341,135 +871,135 @@ Requirements Notation and Conventions</h3>
                     <span>)</span>
                 </a>[ISO29115]实体认证的保证级别。
             </dd>
-            <en>Authentication Context Class</en>
-            <dt>认证上下文类</dt>
-            <en>
+            <!--Authentication Context Class-->
+            <dt>Authentication Context Class</dt>
+            <!--
                 Set of authentication methods or procedures that are considered
                 to be equivalent to each other in a particular context.
-            </en>
+            -->
             <dd>
                 认证方法或程序在特定的上下文中被认为是相互等同的一组认证方法或程序。
             </dd>
-            <en>Authentication Context Class Reference</en>
-            <dt>认证上下文类参考</dt>
-            <en>
+            <!--Authentication Context Class Reference-->
+            <dt>Authentication Context Class Reference</dt>
+            <!--
                 Identifier for an Authentication Context Class.
-            </en>
+            -->
             <dd>
                 认证上下文类的标识符。
             </dd>
-            <en>
+            <!--
                 Authorization Code Flow
-            </en>
-            <dt>授权码流程</dt>
-            <en>
+            -->
+            <dt>Authorization Code Flow</dt>
+            <!--
                 OAuth 2.0 flow in which
                 an Authorization Code is returned from the Authorization Endpoint and
                 all tokens are returned from the Token Endpoint.
-            </en>
+            -->
             <dd>
                 OAuth 2.0流程，其中授权代码从授权终端返回，所有令牌从令牌终端返回。
             </dd>
-            <en>
+            <!--
                 Authorization Request
-            </en>
-            <dt>授权请求</dt>
-            <en>
+            -->
+            <dt>Authorization Request</dt>
+            <!--
                 OAuth 2.0 Authorization Request as defined by
                 <a class='info' href='#RFC6749'>[RFC6749]<span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span></a>.
-            </en>
+            -->
             <dd>
                 由
                 <a class="info" href="#RFC6749">
                     [RFC6749]
                     <span> (</span><span class='info'>Hardt, D., &ldquo;The OAuth 2.0 Authorization Framework,&rdquo; October&nbsp;2012.</span><span>)</span>
                 </a>
-                [RFC6749]定义的 OAuth 2.0授权请求。
+                [RFC6749]定义的 OAuth 2.0 Authorization Request。
             </dd>
-            <en>
+            <!--
                 Claim
-            </en>
+            -->
             <dt>Claim</dt>
-            <en>
+            <!--
                 Piece of information asserted about an Entity.
-            </en>
+            -->
             <dd>
-                有关一个实体的部分。
+                有关一个Entity的部分信息。
             </dd>
-            <en>
+            <!--
                 Claim Type
-            </en>
-            <dt>Claim类型</dt>
-            <en>
+            -->
+            <dt>Claim Type</dt>
+            <!--
                 Syntax used for representing a Claim Value.
                 This specification defines Normal, Aggregated, and Distributed Claim Types.
-            </en>
+            -->
             <dd>
-                用于表示Claim Value的语法规则。本规范定义了普通，聚合和分布式的Claim类型。
+                用于表示Claim Value的语法规则。本规范定义了Normal，Aggregated和Distributed的Claim类型。
             </dd>
-            <en>Claims Provider</en>
-            <dt>Claim提供者</dt>
-            <en>
+            <!--Claims Provider-->
+            <dt>Claims Provider</dt>
+            <!--
                 Server that can return Claims about an Entity.
-            </en>
+            -->
             <dd>
-                可以返回有关实体的Claim的服务器。
+                可以返回有关Entity的Claim的服务器。
             </dd>
-            <en>
+            <!--
                 Credential
-            </en>
-            <dt>凭据</dt>
-            <en>
+            -->
+            <dt>Credential</dt>
+            <!--
                 Data presented as evidence of the right to use an identity
                 or other resources.
-            </en>
+            -->
             <dd>
                 提供作为使用身份或其他资源的权利的凭据数据。
             </dd>
-            <en>
+            <!--
                 End-User
-            </en>
-            <dt>终端用户</dt>
-            <en>
+            -->
+            <dt>End-User</dt>
+            <!--
                 Human participant.
-            </en>
+            -->
             <dd>
                 人类参与者。
             </dd>
-            <en>Entity</en>
-            <dt>实体</dt>
-            <en>
+            <!--Entity-->
+            <dt>Entity</dt>
+            <!--
                 Something that has a separate and distinct existence and that can be
                 identified in a context. An End-User is one example of an Entity.
-            </en>
+            -->
             <dd>
                 一个独立的，唯一的，可以在上下文中确定的事物。终端用户是实体的一个例子。
             </dd>
-            <en>Essential Claim</en>
-            <dt>Claim本质</dt>
-            <en>
+            <!--Essential Claim-->
+            <dt>Essential Claim</dt>
+            <!--
                 Claim specified by the Client as being necessary to ensure a smooth
                 authorization experience for the specific task requested by the End-User.
-            </en>
+            -->
             <dd>
-                作为一个由终端用户确保授权任务请求顺利进行而必须的，被客户端明确规定的声明。
+                为了完成End-User特定的请求任务，Client指定的Claim是必要的，以确保一个良好的用户体验。
             </dd>
-            <en>Hybrid Flow</en>
-            <dt>混合流程</dt>
-            <en>
+            <!--Hybrid Flow-->
+            <dt>Hybrid Flow</dt>
+            <!--
                 OAuth 2.0 flow in which
                 an Authorization Code is returned from the Authorization Endpoint,
                 some tokens are returned from the Authorization Endpoint,
                 and others are returned from the Token Endpoint.
-            </en>
+            -->
             <dd>
-                OAuth 2.0流程中授权代码从授权端端返回，一些Token从授权端端返回，其他Token从Token Endpoint返回。
+                OAuth 2.0流程中授权代码从Authorization Endpoint返回，一些Token从Authorization Endpoint返回，其他Token从Token Endpoint返回。
             </dd>
-            <en>
+            <!--
                 ID Token
-            </en>
+            -->
             <dt>ID Token</dt>
-            <en>
+            <!--
                 <a class='info' href='#JWT'>
                     JSON Web Token (JWT)
                     <span> (</span>
@@ -1478,7 +1008,7 @@ Requirements Notation and Conventions</h3>
                 </a>
                 [JWT] that contains Claims about the Authentication event.
                 It MAY contain other Claims.
-            </en>
+            -->
             <dd>
                 <a class="info" href="#JWT">
                     JSON Web Token (JWT)
@@ -1488,201 +1018,201 @@ Requirements Notation and Conventions</h3>
                 </a>
                 [JWT]包含有关身份验证事件的Claim。它可能包含其他的Claim。
             </dd>
-            <en>Identifier</en>
-            <dt>身份识别</dt>
-            <en>
+            <!--Identifier-->
+            <dt>Identifier</dt>
+            <!--
                 Value that uniquely characterizes an Entity in a specific context.
-            </en>
+            -->
             <dd>
-                在特定情况下表示实体的唯一值。
+                在特定情况下表示Entity的唯一值。
             </dd>
-            <en>
+            <!--
                 Identity
-            </en>
-            <dt>身份</dt>
-            <en>
+            -->
+            <dt>Identity</dt>
+            <!--
                 Set of attributes related to an Entity.
-            </en>
+            -->
             <dd>
-                与实体相关的一组属性。
+                与Entity相关的一组属性。
             </dd>
-            <en>
+            <!--
                 Implicit Flow
-            </en>
-            <dt>隐式流程</dt>
-            <en>
+            -->
+            <dt>Implicit Flow</dt>
+            <!--
                 OAuth 2.0 flow in which all tokens are returned from the Authorization Endpoint
                 and neither the Token Endpoint nor an Authorization Code are used.
-            </en>
+            -->
             <dd>
-                OAuth 2.0的流程，其中所有的令牌从授权终端返回，并且既不是令牌终端，也不是一个被使用的授权码。
+                OAuth 2.0的流程，其中所有的令牌从Authorization Endpoint返回，并且既不是Token Endpoin，也不是一个被使用的Authorization Code。
             </dd>
-            <en>
+            <!--
                 Issuer
-            </en>
-            <dt>发行者</dt>
-            <en>Entity that issues a set of Claims.</en>
+            -->
+            <dt>Issuer</dt>
+            <!--Entity that issues a set of Claims.-->
             <dd>
-                发布一组已拥有了Claims的实体。
+                发布一组已拥有了Claims的Entity。
             </dd>
-            <en>Issuer Identifier</en>
-            <dt>发行人标识符</dt>
-            <en>
+            <!--Issuer Identifier-->
+            <dt>Issuer Identifier</dt>
+            <!--
                 Verifiable Identifier for an Issuer.
                 An Issuer Identifier is a case sensitive URL
                 using the <tt>https</tt> scheme that
                 contains scheme, host, and optionally, port number and path
                 components and no query or fragment components.
-            </en>
+            -->
             <dd>
                 发行人的可验证标识符。发行者标识符是一个区分大小写的URL，使用包含方案，主机以及端口号（可选）和路径组件以及不含查询或片段组件的<tt>https</tt>方案。
             </dd>
-            <en>
+            <!--
                 Message
-            </en>
-            <dt>信息</dt>
-            <en>
+            -->
+            <dt>Message</dt>
+            <!--
                 Request or a response between an OpenID
                 Relying Party and an OpenID Provider.
-            </en>
+            -->
             <dd>
                 OpenID依赖方和OpenID提供者之间的请求或响应。
             </dd>
-            <en>
+            <!--
                 OpenID Provider (OP)
-            </en>
-            <dt>OpenID提供者（OP）</dt>
-            <en>
+            -->
+            <dt>OpenID Provider (OP)</dt>
+            <!--
                 OAuth 2.0 Authorization Server that is capable of
                 Authenticating the End-User and
                 providing Claims to a Relying Party
                 about the Authentication event and the End-User.
-            </en>
+            -->
             <dd>
-                OAuth 2.0授权服务器，能够对终端用户进行身份验证，并向授权用户提供有关身份验证事件和终端用户的Claims。
+                OAuth 2.0 Authorization Server，能够对End-User进行身份验证，并向授权用户提供有关身份验证事件和End-User的Claims。
             </dd>
-            <en>
+            <!--
                 Request Object
-            </en>
-            <dt>请求对象</dt>
-            <en>
+            -->
+            <dt>Request Object</dt>
+            <!--
                 JWT that contains a set of request parameters as its Claims.
-            </en>
+            -->
             <dd>
                 包含一组请求参数的JWT作为其Claim。
             </dd>
-            <en>Request URI</en>
-            <dt>请求URI</dt>
-            <en>
+            <!--Request URI-->
+            <dt>Request URI</dt>
+            <!--
                 URL that references a resource containing a Request Object.
                 The Request URI contents MUST be retrievable by the
                 Authorization Server.
-            </en>
+            -->
             <dd>
                 引用包含请求对象的资源的URL。请求URI内容务必可以由授权服务器检索。
             </dd>
-            <en>Pairwise Pseudonymous Identifier (PPID)</en>
-            <dt>成对匿名标识符（PPID）</dt>
-            <en>
+            <!--Pairwise Pseudonymous Identifier (PPID)-->
+            <dt>Pairwise Pseudonymous Identifier (PPID)</dt>
+            <!--
                 Identifier that identifies the Entity to a Relying Party that cannot be correlated
                 with the Entity's PPID at another Relying Party.
-            </en>
+            -->
             <dd>
                 在另一个依赖方标识实体到一个依赖方，不能与实体的PPID相关的标识符。
             </dd>
-            <en>Personally Identifiable Information (PII)</en>
-            <dt>个人身份信息（PII）</dt>
-            <en>
+            <!--Personally Identifiable Information (PII)-->
+            <dt>Personally Identifiable Information (PII)</dt>
+            <!--
                 Information that (a) can be used to identify the natural person
                 to whom such information relates, or
                 (b) is or might be directly or indirectly linked to a
                 natural person to whom such information relates.
-            </en>
+            -->
             <dd>
                 （a）可用于识别与此类信息有关的自然人的信息，
                 或（b）可能直接或间接与此类信息所关联的自然人有联系的信息。
             </dd>
-            <en>
+            <!--
                 Relying Party (RP)
-            </en>
-            <dt>依赖方（RP）</dt>
-            <en>
+            -->
+            <dt>Relying Party (RP)</dt>
+            <!--
                 OAuth 2.0 Client application requiring End-User Authentication
                 and Claims from an OpenID Provider.
-            </en>
+            -->
             <dd>
-                OAuth 2.0客户端应用程序，需要来自OpenID提供者的终端用户身份验证和Claim。
+                OAuth 2.0 Client应用程序，需要来自OpenID Provider的End-User的Authentication和Claim。
             </dd>
-            <en>
+            <!--
                 Sector Identifier
-            </en>
-            <dt>领域标识符</dt>
-            <en>
+            -->
+            <dt>Sector Identifier</dt>
+            <!--
                 Host component of a URL used by the Relying Party's organization
                 that is an input to the computation of pairwise Subject Identifiers
                 for that Relying Party.
-            </en>
+            -->
             <dd>
                 由依赖方组织使用的URL的主机组件，该组件是用于计算该依赖方的成对主题标识符的输入。
             </dd>
-            <en>
+            <!--
                 Self-Issued OpenID Provider
-            </en>
-            <dt>自行颁发的OpenID提供程序</dt>
-            <en>
+            -->
+            <dt>Self-Issued OpenID Provider</dt>
+            <!--
                 Personal, self-hosted OpenID Provider that issues self-signed ID Tokens.
-            </en>
+            -->
             <dd>
                 个人自行托管的OpenID提供程序发出自签名的ID Tokens。
             </dd>
-            <en>
+            <!--
                 Subject Identifier
-            </en>
-            <dt>主题标识符</dt>
-            <en>
+            -->
+            <dt>Subject Identifier</dt>
+            <!--
                 Locally unique and never
                 reassigned identifier within the Issuer for the End-User,
                 which is intended to be consumed by the Client.
-            </en>
+            -->
             <dd>
                 终端用户的本地唯一且永不重新分配的标识符，供客户端使用。
             </dd>
-            <en>
+            <!--
                 UserInfo Endpoint
-            </en>
-            <dt>UserInfo终端</dt>
-            <en>
+            -->
+            <dt>UserInfo Endpoint</dt>
+            <!--
                 Protected Resource that, when presented with an Access Token by the Client,
                 returns authorized information about the End-User represented by the corresponding
                 Authorization Grant.
                 The UserInfo Endpoint
                 URL MUST use the <tt>https</tt> scheme and MAY contain
                 port, path, and query parameter components.
-            </en>
+            -->
             <dd>
                 受保护的资源，当客户端显示访问令牌时，返回由相应授权许可表示的有关最终用户的授权信息。UserInfo终端URL必须使用<tt>https</tt>方案，并且可以包含端口，路径和查询参数组件。
             </dd>
-            <en>
+            <!--
                 Validation
-            </en>
-            <dt>验证</dt>
-            <en>
+            -->
+            <dt>Validation</dt>
+            <!--
                 Process intended to establish the soundness or correctness of a construct.
-            </en>
+            -->
             <dd>
                 旨在建立一个构建过程的可靠性和正确性。
             </dd>
-            <en>Verification</en>
-            <dt>证明</dt>
+            <!--Verification-->
+            <dt>Verification</dt>
             <dd>
                 旨在测试或证明事实或价值的真实性或准确性的过程。
             </dd>
-            <en>Voluntary Claim</en>
-            <dt>自愿Claim</dt>
-            <en>
+            <!--Voluntary Claim-->
+            <dt>Voluntary Claim</dt>
+            <!--
                 Claim specified by the Client as being useful but not Essential
                 for the specific task requested by the End-User.
-            </en>
+            -->
             <dd>
                 客户端指定的Claim对于终端用户所要求的特定任务来说是有用的，但不是必不可少的。
             </dd>
@@ -1691,7 +1221,7 @@ Requirements Notation and Conventions</h3>
     <p>
 
     </p>
-    <en>
+    <!--
         IMPORTANT NOTE TO READERS: The terminology definitions in
         this section are a normative portion of this specification,
         imposing requirements upon implementations.  All the
@@ -1699,11 +1229,11 @@ Requirements Notation and Conventions</h3>
         "Issuer Identifier", reference these defined terms.
         Whenever the reader encounters them, their definitions
         found in this section must be followed.
-    </en>
+    -->
     <p>
         读者重要提示：本节中的术语定义是本规范的一个规范性部分，从要求到实现。本规范文本中的所有大写字母，如“Issuer Identifier”，都引用这些定义的术语。每当读者遇到它们时，都必须遵循本节中的定义。
     </p>
-    <en>
+    <!--
         For more background on some of the terminology used,
         see
         <a class='info' href='#RFC4949'>
@@ -1728,7 +1258,7 @@ Requirements Notation and Conventions</h3>
             </span>
             <span>)</span>
         </a> [X.1252].
-    </en>
+    -->
     <p>
         有关使用的某些术语的更多背景信息，请参阅
         <a class='info' href='#RFC4949'>
@@ -1754,9 +1284,6 @@ Requirements Notation and Conventions</h3>
             <span>)</span>
         </a> [X.1252].
     </p>
-    
->>>>>>> refs/remotes/origin/IntroductionToClaims
-
 <a name="Overview"></a><br /><hr />
 <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
 <a name="rfc.section.1.3"></a><h3>1.3.&nbsp;
