@@ -1286,32 +1286,28 @@ Authors' Addresses<br />
     </p>
 <a name="Overview"></a><br /><hr />
 <table summary="layout" cellpadding="0" cellspacing="2" class="TOCbug" align="right"><tr><td class="TOCbug"><a href="#toc">&nbsp;TOC&nbsp;</a></td></tr></table>
-<a name="rfc.section.1.3"></a><h3>1.3.&nbsp;
-Overview</h3>
-
-<p>The OpenID Connect protocol, in abstract, follows the following
-	steps.
-</p>
-<p>
-	  </p>
+<a name="rfc.section.1.3"></a>
+<!--<h3>1.3.&nbsp; Overview</h3>-->
+<h3>1.3.&nbsp; 概述</h3>
+<!--<p>The OpenID Connect protocol, in abstract, follows the following steps. </p>-->
+<p>OpenID Connect协议遵循以下步骤。</p>
+<p></p>
 <ol class="text">
-<li>The RP (Client) sends a request to the OpenID Provider (OP).
-</li>
-<li>The OP authenticates the End-User and obtains authorization.
-</li>
-<li>The OP responds with an ID Token and usually an Access Token.
-</li>
-<li>The RP can send a request with the Access Token to the UserInfo Endpoint.
-</li>
-<li>The UserInfo Endpoint returns Claims about the End-User.
-</li>
-</ol><p>
-	
-</p>
-<p>
-	    These steps are illustrated in the following diagram:
-	  
-</p><div style='display: table; width: 0; margin-left: 3em; margin-right: auto'><pre>
+    <!--<li>The RP (Client) sends a request to the OpenID Provider (OP).</li>-->
+    <li>RP（Client）向OpenID Provider（OP）发送请求。</li>
+    <!--<li>The OP authenticates the End-User and obtains authorization.</li>-->
+    <li>OP（OpenID Provider）认证End-User并获得授权</li>
+    <!--<li>The OP responds with an ID Token and usually an Access Token.</li>-->
+    <li>OP使用ID Token进行响应，通常使用Access Token。</li>
+    <!--<li>The RP can send a request with the Access Token to the UserInfo Endpoint.</li>-->
+    <li>RP可以使用Access Token向UserInfo Endpoint发送请求。</li>
+    <!--<li>The UserInfo Endpoint returns Claims about the End-User.</li>-->
+    <li>UserInfo Endpoint返回有关End-User的Claims。</li>
+</ol>
+<p></p>
+<!--<p>These steps are illustrated in the following diagram:</p>-->
+<p>下图说明了这些步骤：</p>
+    <div style='display: table; width: 0; margin-left: 3em; margin-right: auto'><pre>
 +--------+                                   +--------+
 |        |                                   |        |
 |        |---------(1) AuthN Request--------&gt;|        |
